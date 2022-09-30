@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt" 
+	"fmt"
 	"strconv"
 )
 
@@ -53,6 +53,41 @@ func main() {
 	fmt.Printf("%v %T", i5, i5)
 	var j5 string
 	j5 = strconv.Itoa(i5)
-	fmt.Printf("%v %T", j5, j5)
+	fmt.Printf("%v %T\n", j5, j5)
 
+	// Boolean
+	var truth bool = true
+	fmt.Printf("%v, %T\n", truth, truth)
+
+	var n bool
+	fmt.Printf("%v, %T\n", n, n)
+
+	var n1 uint16 =42
+	fmt.Printf("%v, %T\n", n1, n1)
+
+	a := 10
+	b := 3
+	fmt.Println(a+b) // should be 13
+	fmt.Println(a-b) // should be 7
+	fmt.Println(a/b) // should be 3.33
+	fmt.Println(a*b) // should be 30
+	fmt.Println(a%b) // should be 1
+  
+
+	// a = 1010
+	// b = 0011
+	fmt.Println(a&b) // 
+	fmt.Println(a|b) // 
+	fmt.Println(a^b) // 
+	fmt.Println(a&^b) // 
+
+	var input string
+	fmt.Scanln(&input)
+
+	fmt.Println(input)
+
+	var input2 int
+	fmt.Scanln(&input2)
+
+	fmt.Println(input2+2)
 }
